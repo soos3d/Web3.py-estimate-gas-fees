@@ -9,9 +9,10 @@ There are two scripts here:
   
   - transaction_gas.py --> Uses a function to estimate how many Gwei are needed for sending ETH to another address, and shows it a built transaction as an example. 
 
-<b>What is Web3.py?</b>
 
 Note that much of the code is just to make it look better once printed on the console. Like converting the Wei values into Gwei and Ether.
+
+<b>What is Web3.py?</b>
 
 Web3.py is a Python library for interacting with the Ethereum network (Or other networks based on the EVM).
 
