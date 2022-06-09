@@ -15,7 +15,7 @@ last = web3.eth.block_number
 print('Latest block:', last)
 
 # retrieve the gas limit for this simulated transaction. "value" is the latest block encoded in hex
-gas_limit = web3.eth.estimate_gas(({"from":"0xCb1ce05392Bc14aFe30F2bDd34Bf23b4c41584C8","to":"0x7Be657948CA28a51dcccBf93fdb932a033AdfFbe","value":"6c6174657374"}))
+gas_limit = web3.eth.estimate_gas(({"from":"0x43e4715ae093a4C86B5eCdDb52216c4f879e9672","to":"0x7Be657948CA28a51dcccBf93fdb932a033AdfFbe","value":"6c6174657374"}))
 print('Gas limit:', gas_limit)
 
 # retrieve the base fee in wei, then displays it in Gwe
