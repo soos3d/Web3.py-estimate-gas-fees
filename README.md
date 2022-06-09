@@ -29,12 +29,39 @@ The original API was derived from the Web3.js Javascript API but has since evolv
 ![162478127-94cd2344-72f1-4136-a220-8b2c8e52d194](https://user-images.githubusercontent.com/99700157/169823194-c3202f8f-5438-4a45-95e8-b2e1f6d44225.png)
 
 Insert the URL you get from your Chainstack node in the 'node_url' variable.
-![image](https://user-images.githubusercontent.com/99700157/169822684-37ee1a9a-1262-4c83-b689-9a6a1b9a48f4.png)
+
+```py
+# Node endpoint
+node_url = "CHAINSTACK_NODE_URL"
+
+# Create the node connection
+web3 = Web3(Web3.HTTPProvider(node_url))
+
+# Verify if the connection is successful
+if web3.isConnected():
+    print("Connection Successful")
+    print('-' * 50)
+else:
+    print("Connection Failed")
+```
 
 Customize the priority fee if you want. On Ethereum, 2 Gwei is generally the minimum required for your transaction to be picked by the miners. This is referred as 'miner tip' as well, you can increase it to incetivice them to pick up and process your transaction faster. 
 
-![image](https://user-images.githubusercontent.com/99700157/169823353-e6d68f4b-7362-4360-8f1b-6027d55f61ba.png)
+```py
+# set up the miner tip in wei
+priority_fee = 2000000000       # 2 Gwei in wei
+print('Priority fee: ' + str(web3.fromWei(priority_fee, 'gwei')) + ' Gwei')
+```
 
 Now, you can run the program and you will receive a result like this in the console:
 
-![image](https://user-images.githubusercontent.com/99700157/169824049-634f9c64-e74d-4382-bfc4-d3492ea7a0b5.png)
+```sh
+Connection Successful
+Latest block: 14934388
+Gas limit: 21000
+Base fee: 72.960051418 Gwei
+Priority fee: 2 Gwei
+Reasonable fee: 74.960051418 Gwei
+------------------------------
+Ether paid as gas fee: 0.001574161079778 ETH
+```
