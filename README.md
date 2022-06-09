@@ -1,4 +1,4 @@
-# Web3.py-estimate-gas-fees
+# Web3.py estimate gas fees
 This script shows how you can estimate gas fees on an EVM blockchain, using a Chainstack node. You can use it to simply retrieve information to create an app like eth gas station, or to calculate how much the gas fee should be when sending a transaction using a bot written using web3.py.
 
 You can also check my Skillshare class where I show the fundamentals about web3.py. WEB3.py: Interact with the Blockchain
@@ -18,7 +18,7 @@ Web3.py is a Python library for interacting with the Ethereum network (Or other 
 
 It’s commonly found in decentralized apps (dapps) to help with sending transactions, interacting with smart contracts, reading block data, and a variety of other use cases.
 
-The original API was derived from the Web3.js Javascript API but has since evolved toward the needs and creature comforts of Python developers. (source: Web3.py docs)
+The original API was derived from the Web3.js Javascript API but has since evolved toward the needs and creature comforts of Python developers. (source: [Web3.py docs](https://web3py.readthedocs.io/en/stable/).)
 
 <b>How do I use this program to estimate gas fees?</b>
 
