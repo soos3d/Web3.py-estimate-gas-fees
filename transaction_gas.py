@@ -23,7 +23,7 @@ last = web3.eth.block_number
 print('Latest block:', last)
 
 # simulate a transaction and retrieve gas limit
-gas_limit = web3.eth.estimate_gas(({"from":"0x43e4715ae093a4C86B5eCdDb52216c4f879e9672","to":"0x7Be657948CA28a51dcccBf93fdb932a033AdfFbe","value":"6c6174657374"}))
+gas_limit = web3.eth.estimate_gas(({"from":"0x43e4715ae093a4C86B5eCdDb52216c4f879e9672","to":"0xA090e606E30bD747d4E6245a1517EbE430F0057e"}), "latest")
 print('Gas limit:', gas_limit)
 
 # use the function to retrieve how many gwei to use for gas
