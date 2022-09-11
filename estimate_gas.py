@@ -14,7 +14,7 @@ else:
 last = web3.eth.block_number
 print('Latest block:', last)
 
-# retrieve the gas limit for this simulated transaction. "value" is the latest block encoded in hex
+# retrieve the gas limit for this simulated transaction.
 gas_limit = web3.eth.estimate_gas(({"from":"0x43e4715ae093a4C86B5eCdDb52216c4f879e9672","to":"0xA090e606E30bD747d4E6245a1517EbE430F0057e"}), "latest")
 print('Gas limit:', gas_limit)
 
